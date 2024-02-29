@@ -6,6 +6,7 @@ export default {
         lightBlue: "#5964e0",
         lightGray: "#6e8098",
         blackWords: "#19202d",
+        lightBlueBtn: "#939BF4",
       },
     },
   },

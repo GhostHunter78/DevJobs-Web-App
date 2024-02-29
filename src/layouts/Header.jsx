@@ -7,7 +7,7 @@ const Header = () => {
     <div
       className="flex items-center justify-between w-screen pt-8 px-6 pb-[72px]"
       style={{
-        backgroundImage: "url(assets/mobile/mobile-header-background.png)",
+        backgroundImage: "url(/assets/mobile/mobile-header-background.png)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}

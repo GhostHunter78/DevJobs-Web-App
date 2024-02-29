@@ -1,13 +1,24 @@
 import data from "../data.json";
 import SearchBar from "../components/SearchBar";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (companyName) => {
+    navigate(`/selectedCompany/${companyName}`);
+  };
+
   return (
     <div className="flex flex-col gap-[57px] px-6 mt-[-40px] pb-[62px]">
       <SearchBar />
       <div className="grid grid-cols-1 gap-[49px]">
         {data.map((company, index) => (
-          <div className="bg-white pl-8 pb-9 rounded-md" key={index}>
+          <div
+            className="bg-white pl-8 pb-9 rounded-md"
+            key={index}
+            onClick={() => handleNavigation(company.company)}
+          >
             <figure
               className="w-[50px] flex flex-col justify-center rounded-2xl py-4 px-1 mt-[-25px]"
               style={{ background: company.logoBackground, aspectRatio: "1/1" }}
