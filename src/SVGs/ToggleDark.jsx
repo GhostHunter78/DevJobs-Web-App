@@ -1,4 +1,4 @@
-const ToggleLight = ({ onClick, isVisible }) => {
+const ToggleDark = ({ onClick, isVisible }) => {
   return (
     <>
       <svg
@@ -11,10 +11,10 @@ const ToggleLight = ({ onClick, isVisible }) => {
         style={{ display: isVisible ? "block" : "none" }}
       >
         <rect width="48" height="24" rx="12" fill="white" />
-        <circle cx="12" cy="12" r="7" fill="#5964E0" />
+        <circle cx="37" cy="12" r="7" fill="#5964E0" />
       </svg>
     </>
   );
 };
 
-export default ToggleLight;
+export default ToggleDark;
